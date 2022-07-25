@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import ContactContainer from './features/contact/ContactContainer';
+import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
+import "primereact/resources/primereact.min.css";                  //core css
+import "primeicons/primeicons.css";                                //icons
+import 'primeflex/primeflex.css';
+// import { useState } from 'react';
+// import { Button } from 'primereact/button';
+import OrganizationContainer from './features/organization/OrganizationContainer';
 
-function App() {
+const App:React.FC =()=> {
+  // const [active,setActive]=useState('');
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <div>
+        <Button onClick={()=> setActive('Organization')} label='Add Organization' ></Button>
+        <Button onClick={()=> setActive('Contact')} label='Add Contact' ></Button>
+        </div> */}
+        <div>
+        {/* {active === "Contact" && <ContactContainer />} */}
+        {/* {active === "Organization" && <OrganizationContainer />} */}
+        <OrganizationContainer />
+      </div>
     </div>
   );
 }

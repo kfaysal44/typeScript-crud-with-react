@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.button{
+  float: right;
+  padding-top: 29px;
+}
+.edit{
+  padding-right: 20%;
+}
+.card {
+  /* margin-bottom: 2rem; */
+ 
+  /* max-width: auto; */
+  /* margin: 30px auto; */
+  /* overflow: auto; */
+  /* min-height: 300px; */
+  border: 1px solid steelblue;
+  
+  border-radius: 5px;
+}
+
+
+element.style {
+  padding-top: 29px;
+}
